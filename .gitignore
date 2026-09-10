@@ -1,0 +1,5 @@
+# Este repositório guarda binários de propósito. Ignorar só o lixo local.
+.DS_Store
+Thumbs.db
+*.swp
+__pycache__/

@@ -1,0 +1,50 @@
+name: Gerar manifest.json
+
+# Regenera o manifest.json sempre que binários entram, saem ou mudam.
+# O objetivo é que publicar uma versão seja só "copiar o .bin e dar push".
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'firmware/**'
+      - 'app/**'
+      - 'tools/gerar_manifest.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: manifest-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # o gerador lê a data do último commit de cada binário
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validar a árvore de binários
+        run: python3 tools/gerar_manifest.py --verificar
+
+      - name: Gerar manifest.json
+        run: python3 tools/gerar_manifest.py
+
+      - name: Commitar se mudou
+        run: |
+          if git diff --quiet -- manifest.json; then
+            echo "manifest.json já estava atualizado."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          git commit -m "chore: regenera manifest.json"
+          git push
