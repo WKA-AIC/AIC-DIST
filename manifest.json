@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em": "2026-09-10T19:18:43Z",
+  "gerado_em": "2026-09-12T23:17:40Z",
   "base_url": "https://raw.githubusercontent.com/WKA-AIC/AIC-DIST/main/",
   "dispositivos": [
     {
@@ -8,8 +8,28 @@
       "nome": "Painel",
       "tipo": "firmware",
       "canais": {
-        "stable": [],
-        "beta": []
+        "stable": [
+          {
+            "versao": "1.0.0",
+            "arquivo": "firmware/aic-p/stable/1.0.0/AIC-P-FW.bin",
+            "tamanho": 311776,
+            "sha256": "5df93940610432659cdd2687b6d91b8a1b3dd916e3d26cd571480c2383fcd006",
+            "publicado_em": "2026-09-12T23:17:26Z",
+            "projeto": "AIC-P-FW",
+            "notas": "firmware/aic-p/stable/1.0.0/notas.md"
+          }
+        ],
+        "beta": [
+          {
+            "versao": "0.5.0",
+            "arquivo": "firmware/aic-p/beta/0.5.0/AIC-P-FW.bin",
+            "tamanho": 274560,
+            "sha256": "0055998e9c39875bf84a7079bc46c7c9e0d4f49dae8239f1d4d7a6870e57e015",
+            "publicado_em": "2026-09-12T23:17:26Z",
+            "projeto": "AIC-P-FW",
+            "notas": "firmware/aic-p/beta/0.5.0/notas.md"
+          }
+        ]
       }
     },
     {
