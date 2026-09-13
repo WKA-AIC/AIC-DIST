@@ -1,6 +1,7 @@
 # AIC-P 1.0.1
 
-Publicado em 2026-09-12 · canal: stable
+Publicado em 2026-09-12 · canal: beta (movida de stable em 2026-09-13 -
+canal stable reservado pra 1.0.0/0.5.0, sem Wi-Fi/OTA)
 
 ## Novidades
 - Wi-Fi: equipamento sobe SoftAP (`AIC-P-XXXX`) no boot, com API HTTP/JSON
