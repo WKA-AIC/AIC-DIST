@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em": "2026-09-13T05:32:40Z",
+  "gerado_em": "2026-09-14T19:30:58Z",
   "base_url": "https://raw.githubusercontent.com/WKA-AIC/AIC-DIST/main/",
   "dispositivos": [
     {
@@ -82,8 +82,46 @@
       "nome": "Driver de Sensores",
       "tipo": "firmware",
       "canais": {
-        "stable": [],
-        "beta": []
+        "stable": [
+          {
+            "versao": "1.0.0",
+            "arquivo": "firmware/aic-ds/stable/1.0.0/AIC-DS-FW.bin",
+            "tamanho": 223408,
+            "sha256": "28fb4538521f347f9d718b090c49ea98c4e21e8cbd417eadc1afcaa6151f7050",
+            "publicado_em": "2026-09-14T19:30:55Z",
+            "projeto": "AIC-DS-FW",
+            "notas": "firmware/aic-ds/stable/1.0.0/notas.md"
+          }
+        ],
+        "beta": [
+          {
+            "versao": "1.0.3",
+            "arquivo": "firmware/aic-ds/beta/1.0.3/AIC-DS-FW.bin",
+            "tamanho": 871920,
+            "sha256": "222afc12a4f37448e31268b7c8bc28c7e9c07b78f54ed498217178e7312fa9c0",
+            "publicado_em": "2026-09-14T19:30:55Z",
+            "projeto": "AIC-DS-FW",
+            "notas": "firmware/aic-ds/beta/1.0.3/notas.md"
+          },
+          {
+            "versao": "1.0.2",
+            "arquivo": "firmware/aic-ds/beta/1.0.2/AIC-DS-FW.bin",
+            "tamanho": 214336,
+            "sha256": "fa6c01153d04db6b2244797acbf3f8bd19087967f9924c39ecb6685e7aef8b72",
+            "publicado_em": "2026-09-14T19:30:55Z",
+            "projeto": "AIC-DS-FW",
+            "notas": "firmware/aic-ds/beta/1.0.2/notas.md"
+          },
+          {
+            "versao": "0.5.0",
+            "arquivo": "firmware/aic-ds/beta/0.5.0/AIC-DS-FW.bin",
+            "tamanho": 204144,
+            "sha256": "4b00ca83fc1bf0712ad9a548f9fa96e8e2f168322106232c1d16077c214825a9",
+            "publicado_em": "2026-09-14T19:30:55Z",
+            "projeto": "AIC-DS-FW",
+            "notas": "firmware/aic-ds/beta/0.5.0/notas.md"
+          }
+        ]
       }
     },
     {
