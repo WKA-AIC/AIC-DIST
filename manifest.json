@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em": "2026-09-16T00:17:56Z",
+  "gerado_em": "2026-09-16T00:18:09Z",
   "base_url": "https://raw.githubusercontent.com/WKA-AIC/AIC-DIST/main/",
   "dispositivos": [
     {
@@ -108,7 +108,7 @@
             "arquivo": "firmware/aic-ds/beta/1.0.4/AIC-DS-FW.bin",
             "tamanho": 887712,
             "sha256": "1e042b53db3057a9709605bec154dd321252375d2df6ee88011baf750235b25d",
-            "publicado_em": "2026-09-16T00:17:37Z",
+            "publicado_em": "2026-09-16T00:17:56Z",
             "projeto": "AIC-DS-FW",
             "notas": "firmware/aic-ds/beta/1.0.4/notas.md"
           },
