@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em": "2026-09-16T00:18:09Z",
+  "gerado_em": "2026-09-16T17:48:37Z",
   "base_url": "https://raw.githubusercontent.com/WKA-AIC/AIC-DIST/main/",
   "dispositivos": [
     {
@@ -29,6 +29,15 @@
           }
         ],
         "beta": [
+          {
+            "versao": "1.0.5",
+            "arquivo": "firmware/aic-p/beta/1.0.5/AIC-P-FW.bin",
+            "tamanho": 991488,
+            "sha256": "7cf8d2f12910a7607587cea4b5eb4993fd80837276571c5b3ea07d1583628a1c",
+            "publicado_em": "2026-09-16T17:48:29Z",
+            "projeto": "AIC-P-FW",
+            "notas": "firmware/aic-p/beta/1.0.5/notas.md"
+          },
           {
             "versao": "1.0.4",
             "arquivo": "firmware/aic-p/beta/1.0.4/AIC-P-FW.bin",
