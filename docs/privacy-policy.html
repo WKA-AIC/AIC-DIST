@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — INOOTEC Taxa Fixa</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#F6F8F5;
+    --surface:#FFFFFF;
+    --border:#DCE3DC;
+    --text:#16211A;
+    --muted:#55645A;
+    --accent:#146C36;
+    --accent-soft:#E4F1E8;
+    --amber:#B3790A;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0F1512;
+      --surface:#151D18;
+      --border:#26332B;
+      --text:#EAF1EA;
+      --muted:#9FB0A5;
+      --accent:#7FD4A0;
+      --accent-soft:#1C3324;
+      --amber:#E3B25C;
+    }
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Source Sans 3","Inter",system-ui,-apple-system,sans-serif;
+    line-height:1.6;
+    padding-inline:20px;
+    padding-block:32px;
+  }
+  img{max-width:100%}
+
+  .page{
+    max-width:720px;
+    margin-inline:auto;
+  }
+
+  header.hero{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:28px;
+  }
+  .mark{
+    width:44px;height:44px;border-radius:12px;
+    background:var(--accent);
+    display:flex;align-items:center;justify-content:center;
+    flex:none;
+  }
+  .mark svg{width:24px;height:24px}
+  header.hero h1{
+    font-family:"Fraunces","Source Serif 4",Georgia,serif;
+    font-size:1.5rem;
+    font-weight:600;
+    margin:0;
+    line-height:1.25;
+  }
+  header.hero p{
+    margin:2px 0 0;
+    color:var(--muted);
+    font-size:0.85rem;
+  }
+
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 16px;
+    font-size:0.8rem;
+    color:var(--muted);
+    border-block:1px solid var(--border);
+    padding-block:10px;
+    margin-bottom:28px;
+  }
+  .meta b{color:var(--text);font-weight:600}
+
+  .callout{
+    background:var(--accent-soft);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:16px 18px;
+    margin-bottom:32px;
+    font-size:0.95rem;
+  }
+  .callout strong{color:var(--accent)}
+
+  nav.toc{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:16px 20px;
+    margin-bottom:36px;
+  }
+  nav.toc p{
+    margin:0 0 8px;
+    font-size:0.75rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:600;
+  }
+  nav.toc ol{
+    margin:0;padding-left:1.1em;
+    columns:2;
+    column-gap:24px;
+    font-size:0.88rem;
+  }
+  nav.toc li{margin-bottom:6px}
+  nav.toc a{color:var(--text);text-decoration:none}
+  nav.toc a:hover{color:var(--accent)}
+
+  section{margin-bottom:34px;scroll-margin-top:16px}
+  h2{
+    font-family:"Fraunces","Source Serif 4",Georgia,serif;
+    font-size:1.15rem;
+    font-weight:600;
+    margin:0 0 10px;
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  h2 .num{
+    color:var(--accent);
+    font-family:"Source Sans 3",sans-serif;
+    font-variant-numeric:tabular-nums;
+    font-weight:700;
+    font-size:0.85rem;
+  }
+  p{margin:0 0 12px;max-width:65ch}
+  ul{margin:0 0 12px;padding-left:1.2em}
+  li{margin-bottom:6px;max-width:62ch}
+
+  table.perm{
+    width:100%;
+    border-collapse:collapse;
+    margin:14px 0 6px;
+    font-size:0.85rem;
+    border:1px solid var(--border);
+    border-radius:10px;
+    overflow:hidden;
+  }
+  table.perm th, table.perm td{
+    text-align:left;
+    padding:9px 12px;
+    border-bottom:1px solid var(--border);
+    vertical-align:top;
+  }
+  table.perm th{
+    background:var(--surface);
+    font-size:0.72rem;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:600;
+  }
+  table.perm tr:last-child td{border-bottom:none}
+  table.perm td.p{
+    font-family:ui-monospace,"SF Mono",Menlo,monospace;
+    font-size:0.78rem;
+    color:var(--amber);
+    white-space:nowrap;
+  }
+
+  .nodata{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:12px 14px;
+    margin-bottom:10px;
+  }
+  .nodata svg{flex:none;width:18px;height:18px;margin-top:2px;color:var(--accent)}
+  .nodata b{display:block;font-size:0.92rem}
+  .nodata span{color:var(--muted);font-size:0.85rem}
+
+  footer{
+    border-top:1px solid var(--border);
+    padding-top:20px;
+    margin-top:40px;
+    font-size:0.82rem;
+    color:var(--muted);
+  }
+  footer a{color:var(--accent)}
+
+  @media (max-width:480px){
+    nav.toc ol{columns:1}
+    table.perm{display:block;overflow-x:auto}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="hero">
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z"/></svg>
+    </div>
+    <div>
+      <h1>Política de Privacidade</h1>
+      <p>INOOTEC — Taxa Fixa</p>
+    </div>
+  </header>
+
+  <div class="meta">
+    <span><b>App:</b> INOOTEC - Taxa Fixa</span>
+    <span><b>Pacote:</b> br.com.inootec.taxafixa</span>
+    <span><b>Última atualização:</b> 22 de setembro de 2026</span>
+  </div>
+
+  <div class="callout">
+    <strong>Resumo direto:</strong> o app INOOTEC - Taxa Fixa não pede cadastro, não tem conta de usuário, e não coleta, armazena ou envia nenhum dado pessoal a nenhum servidor. Ele conversa apenas com o equipamento agrícola conectado, na sua própria rede Wi-Fi. Os detalhes de cada permissão e cada conexão de rede usada estão abaixo.
+  </div>
+
+  <nav class="toc">
+    <p>Nesta página</p>
+    <ol>
+      <li><a href="#o-que-e">O que é o app</a></li>
+      <li><a href="#sem-cadastro">Sem conta e sem cadastro</a></li>
+      <li><a href="#permissoes">Permissões usadas</a></li>
+      <li><a href="#equipamento">Comunicação com o equipamento</a></li>
+      <li><a href="#firmware">Atualização de firmware</a></li>
+      <li><a href="#armazenamento">Dados guardados no aparelho</a></li>
+      <li><a href="#terceiros">Compartilhamento com terceiros</a></li>
+      <li><a href="#criancas">Uso por crianças</a></li>
+      <li><a href="#mudancas">Mudanças nesta política</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ol>
+  </nav>
+
+  <section id="o-que-e">
+    <h2><span class="num">01</span>O que é o app</h2>
+    <p>INOOTEC - Taxa Fixa é um aplicativo de controle remoto para equipamentos agrícolas da linha INOOTEC (painéis e drivers de pulverização/aplicação a taxa fixa). Ele se conecta diretamente ao equipamento — seja pelo Wi-Fi próprio dele (modo ponto de acesso) ou pela rede Wi-Fi local em que os dois estão — para exibir informações em tempo real e enviar comandos de operação.</p>
+    <p>Não existe um "servidor da Inootec" por trás do app recebendo esses dados: a comunicação principal acontece diretamente entre o celular e o equipamento, na mesma rede.</p>
+  </section>
+
+  <section id="sem-cadastro">
+    <h2><span class="num">02</span>Sem conta e sem cadastro</h2>
+    <div class="nodata">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      <div><b>Nenhum login, nenhuma conta</b><span>O app não pede e-mail, nome, telefone ou qualquer identificação pessoal. Não há tela de cadastro de usuário em nenhum ponto do fluxo.</span></div>
+    </div>
+    <div class="nodata">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      <div><b>Nenhum dado enviado para nuvem própria</b><span>Não existe backend da Inootec coletando telemetria, uso do app ou identificadores do usuário.</span></div>
+    </div>
+    <div class="nodata">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      <div><b>Nenhum rastreamento ou analytics</b><span>O app não usa SDKs de publicidade, analytics de terceiros ou qualquer ferramenta de rastreamento de comportamento.</span></div>
+    </div>
+  </section>
+
+  <section id="permissoes">
+    <h2><span class="num">03</span>Permissões usadas e por quê</h2>
+    <p>O Android exige que certas permissões sejam concedidas para o app funcionar, mesmo quando nenhum dado pessoal é de fato coletado. Veja exatamente o motivo de cada uma:</p>
+    <table class="perm">
+      <tr><th>Permissão</th><th>Para quê</th></tr>
+      <tr><td class="p">INTERNET</td><td>Baixar atualizações de firmware de um repositório público (ver seção 5) e conectar via Wi-Fi ao equipamento.</td></tr>
+      <tr><td class="p">ACCESS_NETWORK_STATE</td><td>Saber se o celular está conectado a alguma rede, para decidir quando tentar falar com o equipamento.</td></tr>
+      <tr><td class="p">CHANGE_NETWORK_STATE / CHANGE_WIFI_STATE / ACCESS_WIFI_STATE</td><td>Conectar o celular à rede Wi-Fi própria do equipamento (modo ponto de acesso) e amarrar a conexão a essa rede especificamente.</td></tr>
+      <tr><td class="p">ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION</td><td>Exigência do próprio Android para que apps consigam listar redes Wi-Fi disponíveis (necessário para encontrar o equipamento). O app não usa, guarda nem envia sua localização geográfica para nada — a permissão serve só para o sistema liberar a varredura de redes.</td></tr>
+      <tr><td class="p">NEARBY_WIFI_DEVICES</td><td>Versão mais recente (Android 13+) da mesma permissão de varredura de Wi-Fi acima, sem vínculo com localização.</td></tr>
+      <tr><td class="p">FOREGROUND_SERVICE / FOREGROUND_SERVICE_CONNECTED_DEVICE</td><td>Manter a conexão com o equipamento ativa quando o app está em segundo plano, para a operação não cair.</td></tr>
+      <tr><td class="p">POST_NOTIFICATIONS</td><td>Mostrar a notificação obrigatória do serviço em primeiro plano acima (exigida pelo Android para esse tipo de serviço).</td></tr>
+    </table>
+  </section>
+
+  <section id="equipamento">
+    <h2><span class="num">04</span>Comunicação com o equipamento</h2>
+    <p>Toda a troca de dados operacionais (status do equipamento, comandos, configuração, logs de diagnóstico) acontece diretamente entre o app e o equipamento, sempre dentro da mesma rede Wi-Fi — seja a rede própria criada pelo equipamento, seja a rede Wi-Fi local (roteador) à qual os dois estão conectados. Nada desse tráfego sai para a internet nem passa por qualquer servidor da Inootec ou de terceiros.</p>
+  </section>
+
+  <section id="firmware">
+    <h2><span class="num">05</span>Atualização de firmware</h2>
+    <p>Para verificar e baixar novas versões de firmware, o app consulta um repositório público no GitHub (organização WKA-AIC, projeto AIC-DIST) — o mesmo tipo de acesso que baixar um arquivo público de qualquer site. Essa consulta não envia nenhum dado pessoal, identificador de usuário ou de conta: é apenas o download do manifesto e do binário do firmware.</p>
+  </section>
+
+  <section id="armazenamento">
+    <h2><span class="num">06</span>Dados guardados no aparelho</h2>
+    <p>Algumas informações ficam salvas <b>somente na memória do próprio celular</b>, nunca enviadas para fora dele:</p>
+    <ul>
+      <li>Lista de equipamentos já conectados (nome dado por você, identificador do equipamento, modo de conexão usado).</li>
+      <li>Logs de captura de diagnóstico que você decidir salvar, usados para depuração técnica do equipamento — ficam no armazenamento interno do app até você excluí-los ou compartilhá-los manualmente.</li>
+    </ul>
+    <p>Ao desinstalar o app, esses dados são apagados junto com ele.</p>
+  </section>
+
+  <section id="terceiros">
+    <h2><span class="num">07</span>Compartilhamento com terceiros</h2>
+    <p>O app não compartilha, vende nem transmite nenhum dado a terceiros. A única exceção é uma ação explícita sua: se você usar a função de compartilhar um arquivo de log (pelo menu padrão de compartilhamento do Android), você escolhe pra onde ele vai — o app não decide isso por conta própria.</p>
+  </section>
+
+  <section id="criancas">
+    <h2><span class="num">08</span>Uso por crianças</h2>
+    <p>Este é um aplicativo técnico voltado para operadores de equipamentos agrícolas, não direcionado a crianças. Não coletamos intencionalmente dados de menores de idade — e, como descrito acima, não coletamos dados pessoais de ninguém.</p>
+  </section>
+
+  <section id="mudancas">
+    <h2><span class="num">09</span>Mudanças nesta política</h2>
+    <p>Se o funcionamento do app mudar de um jeito que afete esta política (por exemplo, se uma futura versão passar a usar algum serviço de nuvem), esta página será atualizada e a data no topo será revisada.</p>
+  </section>
+
+  <section id="contato">
+    <h2><span class="num">10</span>Contato</h2>
+    <p>Dúvidas sobre esta política ou sobre o app podem ser enviadas para a Inootec através dos canais oficiais em <a href="https://www.inootec.com.br" target="_blank" rel="noopener">inootec.com.br</a>.</p>
+  </section>
+
+  <footer>
+    INOOTEC — Taxa Fixa. Esta página descreve o tratamento de dados do aplicativo Android/iOS "INOOTEC - Taxa Fixa" (br.com.inootec.taxafixa).
+  </footer>
+</div>
+</body>
+</html>
