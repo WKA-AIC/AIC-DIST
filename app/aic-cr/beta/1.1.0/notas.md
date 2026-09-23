@@ -18,12 +18,21 @@ Publicado em 2026-09-23 · canal: beta
 - Com o app em segundo plano, o painel para de enviar os dados do
   dashboard. A telemetria continua conectada (comandos, calibração remota)
   e a captura de log continua.
+- Calibração remota: o diálogo abre e fecha pelo estado informado pelo
+  painel, inclusive ao reconectar no meio de uma calibração, e o app avisa
+  como ela terminou (salva, inválida, cancelada no painel ou cancelada por
+  desconexão de mais de 60 s). Se o painel não responder a Confirmar ou
+  Cancelar, o diálogo reabre.
+- Log do painel: frames CAN em texto (`@R`/`@T`), no mesmo formato do
+  Driver de Sensores.
 
 ## Atenção
-- O espelho do display e a pausa do dashboard em segundo plano exigem o
-  firmware do painel com esse suporte, ainda não publicado (posterior ao
-  AIC-P 1.0.11). Com firmware anterior, o display fica em
-  "Aguardando painel…" e o resto do app funciona normalmente.
+- O espelho do display, a pausa do dashboard em segundo plano, o estado da
+  calibração remota e o log CAN em texto exigem o firmware do painel com
+  esse suporte, ainda não publicado (posterior ao AIC-P 1.0.11). Com
+  firmware anterior, o display fica em "Aguardando painel…", o diálogo de
+  calibração pode reabrir por falta de resposta do painel e os frames CAN
+  aparecem corrompidos no log do painel.
 - Assinado com a chave de publicação Inootec (pacote
   br.com.inootec.taxafixa). Um celular com uma build de desenvolvimento
   instalada precisa desinstalá-la antes de instalar esta.
