@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em": "2026-09-23T16:51:35Z",
+  "gerado_em": "2026-09-23T17:04:19Z",
   "base_url": "https://raw.githubusercontent.com/WKA-AIC/AIC-DIST/main/",
   "dispositivos": [
     {
@@ -180,8 +180,8 @@
             "versao": "1.1.0",
             "arquivo": "app/aic-cr/beta/1.1.0/AIC-CR-1.1.0.apk",
             "tamanho": 16089172,
-            "sha256": "2012dfe04f76a824702c9dcf385c63a95183f64f36b338ca11d033ecd5b84036",
-            "publicado_em": "2026-09-23T16:51:14Z",
+            "sha256": "71ed3af75542412d882a44117c967dc968b345841e63931f7e48788e0b30528a",
+            "publicado_em": "2026-09-23T17:03:33Z",
             "notas": "app/aic-cr/beta/1.1.0/notas.md"
           }
         ]
